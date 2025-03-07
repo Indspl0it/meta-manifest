@@ -1,0 +1,18 @@
+<manifest>
+    <remote name="yocto" fetch="git://git.yoctoproject.org" />
+    <remote name="openembedded" fetch="git://git.openembedded.org" />
+    <remote name="github" fetch="https://github.com" />
+
+    <default remote="yocto" revision="scarthgap" />
+
+    <project path="sources/poky" name="poky" remote="yocto" revision="scarthgap" />
+    <project path="sources/meta-intel" name="meta-intel" remote="yocto" revision="scarthgap" />
+    <project path="sources/meta-virtualization" name="meta-virtualization" remote="yocto" revision="scarthgap" />
+    <project path="sources/meta-lts-mixins" name="meta-lts-mixins" remote="yocto" revision="scarthgap/rust" />
+
+    <project path="sources/meta-openembedded" name="meta-openembedded" remote="openembedded" revision="scarthgap" />
+
+    <project path="sources/meta-up-board" name="up-division/meta-up-board" remote="github" revision="scarthgap" />
+    <project path="sources/meta-browser" name="OSSystems/meta-browser" remote="github" revision="scarthgap" />
+    <project path="sources/meta-clang" name="kraj/meta-clang" remote="github" revision="scarthgap" />
+</manifest>
